@@ -24,8 +24,14 @@ public class MathClass {
 			String r1, r2;
 			double re = (-b)/ (2 * a);
 			double im = Math.sqrt(-delta)/ (2 * a);
-			r1 = re + " + i* " + im;
-			r2 = re + " - i* " + im;
+			if(re == 0) {
+				r1 =  " i* " + im;
+				r2 = " -i* " + im;
+			}
+			else {
+				r1 = re + " + i* " + im;
+				r2 = re + " - i* " + im;
+			}
 			result += "root1: " + r1 + "\n" + "root2: " + r2 + "\n";
 			
 		}
