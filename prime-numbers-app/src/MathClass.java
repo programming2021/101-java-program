@@ -35,7 +35,7 @@ public class MathClass {
 			}
 		}
 		System.out.println("============");
-		System.out.println("There are " + count + " primenumbers from 0 to " + max);
+		System.out.println("There are " + count + " prime numbers from 0 to " + max);
 	}
 
 }
